@@ -1,0 +1,62 @@
+juanvelez@tec.mx
+juanvalezballesteros@gamil.com
+5591993504
+
+homework and calasswork 40%
+	first project review (HTML, CSS) 10%
+	second project review (Angular modules) 20%
+	final review (frontend, backend, and data store) 30%
+
+project evaulation
+	individual technical understanding of web application development concepts reviewed in the course 60%
+	team collaboration competence 10%
+	Software quality 20%
+	Out of the box ideas for solving web development problems 10%
+
+github.com/jvelezb/desarrolloweb_verano
+
+PROYECTO FINAL
+	API
+		no se acepta solo google maps
+		must use at least one
+debe resolver una problemática de la sociedad en la cdmx
+
+
+
+Doc a entrega
+problematica
+forma de solucion
+diferenciaodr con respecto a otras soluciones
+lista con desc de soluciones similares
+10 user stories
+
+empleados domésticos
+te llevan en tu coche
+busca roomie
+busca cruzar mascota
+donde correr
+
+contemplar concurrencia de usuarios
+contemplar flujo de pantalla
+contemplar uso de base de datos
+contemplar uso de Oauth 2.0 y uso de redes sociales
+contemplar roles
+contemplar uso de un API tercerizado como Spotify, Open pay, etc
+
+
+HW
+INSTALL NODE
+INSTALL NVM
+
+
+https://ocw.mit.edu/courses/global-studies-and-languages/21g-301-french-i-fall-2004/
+https://ocw.mit.edu/courses/global-studies-and-languages/21g-302-french-ii-fall-2004/
+https://ocw.mit.edu/courses/global-studies-and-languages/21g-312-basic-themes-in-french-literature-and-culture-spring-2011/
+https://ocw.mit.edu/courses/global-studies-and-languages/21g-347-contemporary-short-french-fiction-social-and-literary-trends-since-1990-fall-2013/
+
+https://ocw.mit.edu/courses/global-studies-and-languages/21g-501-japanese-i-fall-2012/
+https://ocw.mit.edu/courses/global-studies-and-languages/21g-502-japanese-ii-spring-2013/
+https://ocw.mit.edu/courses/global-studies-and-languages/21g-503-japanese-iii-fall-2016/
+https://ocw.mit.edu/courses/global-studies-and-languages/21g-504-japanese-iv-spring-2009/
+https://ocw.mit.edu/courses/global-studies-and-languages/21g-505-advanced-japanese-i-fall-2005/
+https://ocw.mit.edu/courses/global-studies-and-languages/21g-506-advanced-japanese-ii-spring-2005/
