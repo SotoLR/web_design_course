@@ -1,0 +1,31 @@
+CSS NOTES
+Class (identified with a dot) take precedence
+Nested elems inherit properties from its parent
+To override inherited settings, specify a style in a more local element
+
+<p class = "header"> Header </p>
+
+.header{
+	font-size:14px;
+}
+
+p{
+	font-color:Black;
+}
+
+==================================
+
+<head>
+	<meta charset="utf-8">
+	<title>Actividad 2</title>
+	<link rel="stylesheet" hfref="style.css" type="text/css">
+	<!-- Multiple style sheets can be linked. In case of conflicts, the one furthes down the page takes precedence.-->
+	<style type="text/css">
+		p{font-family: sans-serif; color:red;}
+		.header{background-color:yellow;}
+	</style> <!-- this is faster -->
+</head>
+
+================================
+font-family: garamond, "Times New Roman", serif;
+	goes with the first one it finds
