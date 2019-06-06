@@ -1,0 +1,129 @@
+$color: blue;
+
+body{color:$color;}
+
+.tabla{color:$color;}
+
+aside{}
+
+nav{
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		display: inline;
+		/*display: inline-block;*/
+	}
+	a{
+		display: block;
+		padding: 6px 30px;
+		text-decoration: none; /*try commenting, see what happens*/
+		text-decoration-color: $color;
+	}
+}
+
+@for $valor from 1 through 6{
+	h#{$valor}{
+		font-size: 24px-3*$valor;
+	}
+}
+
+@each $animal in leon,perror,gato,elefante{
+	.#{$animal}-foto{
+		padding: 3em;
+	}
+}
+
+
+/* mixin is for declaring, function is just a function
+functions can return  */
+@mixin borde($tamano){
+	border-width: $tamano;
+}
+
+img{
+	@include borde(10px);
+}
+
+.img2{
+	@include borde(20px);
+}
+
+@function pow($base, $exp){
+	$resultado: 1;
+	@for $_ from 1 through $exp{
+		$resultado: $resultado * $base;
+	}
+	@return $resultado;
+}
+
+.class_for_fx{
+	margin: pow(2,5)*1px;
+}
+
+
+$selector: 'alumnos';
+/* Interpolation (??) */
+.#{$selector}_md{
+	color: #FF0000;
+}
+
+.#{$selector}_lg{
+	color: #BB0000;
+}
+
+/* parent selector
+different from input[type=submit] because
+in this one, the child inherits stuff from
+parent */
+button{
+	color: black;
+	&:focus{
+		color: red; 
+	}
+}
+
+
+/* MEDIA QUERIES 
+Make it reactive if not natively reactive
+by directing user-agents*/
+
+@media(min-width:768px) and
+	(-webkit-min-device-pixel-ratio: 2),
+	(min-width: 768px) and
+	(min-resolution:192dpi){
+		body{
+			@include borde(10px);
+			color: gray;
+		}
+	}
+
+
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet{
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}){
+		@content;
+	}
+}
+
+@mixin desktop{
+	@media(min-width: #{$desktop-width}){
+		@content;
+	}
+}
+
+@include desktop{
+	#logo{
+		background-color: yellow;
+	}
+}
+
+@include tablet{
+	#logo{
+		background-color: red;
+	}
+}

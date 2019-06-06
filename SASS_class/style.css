@@ -1,0 +1,119 @@
+body {
+  color: blue;
+}
+
+.tabla {
+  color: blue;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  /*display: inline-block;*/
+}
+nav a {
+  display: block;
+  padding: 6px 30px;
+  text-decoration: none;
+  /*try commenting, see what happens*/
+  text-decoration-color: blue;
+}
+
+h1 {
+  font-size: 21px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 15px;
+}
+
+h4 {
+  font-size: 12px;
+}
+
+h5 {
+  font-size: 9px;
+}
+
+h6 {
+  font-size: 6px;
+}
+
+.leon-foto {
+  padding: 3em;
+}
+
+.perror-foto {
+  padding: 3em;
+}
+
+.gato-foto {
+  padding: 3em;
+}
+
+.elefante-foto {
+  padding: 3em;
+}
+
+/* mixin is for declaring, function is just a function
+functions can return  */
+img {
+  border-width: 10px;
+}
+
+.img2 {
+  border-width: 20px;
+}
+
+.class_for_fx {
+  margin: 32px;
+}
+
+/* Interpolation (??) */
+.alumnos_md {
+  color: #FF0000;
+}
+
+.alumnos_lg {
+  color: #BB0000;
+}
+
+/* parent selector
+different from input[type=submit] because
+in this one, the child inherits stuff from
+parent */
+button {
+  color: black;
+}
+button:focus {
+  color: red;
+}
+
+/* MEDIA QUERIES 
+Make it reactive if not natively reactive
+by directing user-agents*/
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
+  body {
+    border-width: 10px;
+    color: gray;
+  }
+}
+@media (min-width: 1024px) {
+  #logo {
+    background-color: yellow;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #logo {
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
