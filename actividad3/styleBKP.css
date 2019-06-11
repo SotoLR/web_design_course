@@ -32,7 +32,7 @@ form{
 	text-align: center;	
 }
 input{
-	margin: 5px 0px;
+	margin: 5px 0;
 	box-sizing: border-box;
 	box-shadow: solid black;
 }

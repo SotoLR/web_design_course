@@ -1,0 +1,84 @@
+/*Roberto Soto A01023599*/
+
+.header{
+	background-image: url("media/banner.jpg");
+	color: white !important;
+	font-weight: bold;
+	text-align: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 15px;
+}
+
+.content{
+	color: gray;
+}
+
+.previews{
+	text-align: center;
+	display: inline-block;
+}
+
+.prev{
+	width: 20%;
+	margin: 0 10px;
+	border: 0;
+	display: inline-block;
+}
+
+.preview_image{
+	height: 200px;
+}
+
+.feature{
+	display: inline-block;
+}
+
+.feature_image_container{
+	width: 40%;
+	display: inline-block;
+}
+
+.feature_image{
+	margin: 0;
+	width: 40%;
+	display: inline-block;
+}
+
+.feature_text{
+	width: 40%;
+	display: inline-block;
+}
+
+.spacer{
+	margin: 20px 0px;
+}
+
+p{
+	font-family: 'Oswald', sans-serif;
+}
+
+@for $n from 1 through 4{
+	h#{$n}{
+		font-family: 'Permanent Marker', cursive;
+		font-weight: bold;
+		margin: 0;
+	}
+}
+
+h1{
+	font-size: 48px;
+}
+
+h2{
+	font-size: 32px;
+}
+
+h3{
+	font-size: 28px;
+	font-family: 'Oswald', sans-serif;
+}
+
+h4{
+	font-size: 20px;
+}

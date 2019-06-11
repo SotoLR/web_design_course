@@ -1,0 +1,117 @@
+/*
+https://www.w3schools.com/css/css3_mediaqueries_ex.asp
+https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+*/
+
+$background-blue: rgb(0,64,255);
+$border-white: white;
+$black: solid black;
+$button-color: rgb(0,55,174);
+$left-offset: 50px;
+$table-border: rgb(0,55,174);
+$table-bg: white;
+$th-border: 3px solid black;
+$shade-gray: rgba(41,44,36,0.3);
+$standard-border: 5px solid gray;
+$border-roundness: 18px;
+
+@mixin align_everything($alignment){
+	align-content: $alignment;
+	align-items: $alignment;
+	text-align: $alignment;
+}
+
+@mixin input_properties($marginx, $marginy){
+	box-sizing: border-box;
+	box-shadow: $black;
+}
+
+body{
+	background-color:$background-blue;
+	border-color: $border-white;
+	@include align_everything(center);
+	margin-left: $left-offset;
+}
+table{
+	width: 100%;
+	border: 2px $table-border;
+	background-color: $table-bg;
+	@include align_everything(center);
+}
+th{
+	border: $th-border;
+	background-color: white;
+}
+td{
+	background-color: $shade-gray;
+}
+h1{
+	text-align: center;
+	background-color: white;
+	border: $standard-border;
+}
+form{
+	background-color: white;
+	border: $standard-border;
+	@include align_everything(center);
+}
+input{
+	margin: 5px 0px;
+	box-sizing: border-box;
+	box-shadow: solid black;
+	border-radius: $border-roundness;
+}
+input[type=submit]{
+	color: $button-color;
+	&:focus{
+		color: $shade-gray;
+	}
+}
+input[type=text]{
+	
+}
+img{
+	@include align_everything(center);
+	background-color: white;
+}
+
+.image_container{
+	@include align_everything(center);
+}
+.table_holder{
+	@include align_everything(center);
+}
+.icon_holder{
+	width: 40px;
+}
+.icon_holder_profile{
+	width: 100px;
+}
+.site_container{
+	flex-direction: column;
+}
+.sidebar{
+	position: fixed;
+	top:0;
+	left:0;
+	margin-right: 20px;
+}
+@media(max-width: 480) and (max-height: 310){
+	body{
+		width: 100%
+	}
+	table{
+		width: 100%;
+	}
+}
+@media(max-width: 1679px) and (max-height: 1049px){
+	.sidebar{
+		visibility: hidden;
+	}
+}
+@media(min-width: 1680px) and (min-height: 1050px){
+	.sidebar{
+		visibility: visible;
+	}
+}

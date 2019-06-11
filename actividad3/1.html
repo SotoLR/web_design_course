@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<!-- Roberto Soto A01023599 -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Actividad 2&dash;1</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		<div id="site_container">
+			<div class="sidebar">
+				<div class="icon_holder"><img src="media/profile.png"></div>
+				<p>
+					<strong>Nombre del Profesor</strong>
+					<hr>
+					Datos del profesor
+				</p>
+			</div>
+			<div class="content">
+				<h1>Sign&dash;Up Sheet</h1>
+				<div class="image_container">
+					<img src="media/tec-banner-transparent.png">
+				</div>
+				<form target="_self" action="menu.html" method="get">
+					First name&colon;
+					<input type ="text" name="fname"> 
+					<br>Last name&colon;
+					<input type ="text" name="lname"> 
+					<br>Major&colon;
+					<input type ="text" name="major">
+					<br>Date of birth&colon;<br>
+					<input type="number" name="day" min="1" max="31">
+					<select>
+						<option value="january">January</option>
+						<option value="february">February</option>
+						<option value="march">March</option>
+						<option value="april">April</option>
+						<option value="may">May</option>
+						<option value="june">June</option>
+						<option value="july">July</option>
+						<option value="august">August</option>
+						<option value="september">September</option>
+						<option value="october">October</option>
+						<option value="novemeber">Novemeber</option>
+						<option value="december">December</option>
+					</select>
+					<input type="number" name="year" max="2019">
+					<br>Gender<br>
+					<input type="radio" name="gender" value="female"> Female
+					<input type="radio" name="gender" value="male"> Male
+					<input type="radio" name="gender" value="other"> Other
+					<br>Grade&colon; 
+					<input type ="number" name="grade">
+					<br>Semester&colon; 
+					<input type="number" name="semester">
+					<br>
+					<input class="button" type="submit" name="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

@@ -87,12 +87,12 @@ button{
 
 /* MEDIA QUERIES 
 Make it reactive if not natively reactive
-by directing user-agents*/
+by directing user-agents
+Comma is an OR
+*/
 
-@media(min-width:768px) and
-	(-webkit-min-device-pixel-ratio: 2),
-	(min-width: 768px) and
-	(min-resolution:192dpi){
+@media(min-width:768px) and (-webkit-min-device-pixel-ratio: 2),
+	(min-width: 768px) and (min-resolution:192dpi){
 		body{
 			@include borde(10px);
 			color: gray;
