@@ -1,0 +1,11 @@
+npm install typescript -g
+tsc --version
+
+compile
+	tsc --out script.js ejercicio1.ts
+run
+	node script.js
+
+technically supposed to run in a browser
+
+REPL available in typescript website

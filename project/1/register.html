@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/main_style.css">
+</head>
+<body>
+	<div class="site_container">
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Aventones</a>
+				</div>
+				<ul class="nav navbar-nav" style="display: inline-block;">
+					<li><a class="navbar-brand" href="#">P&aacute;gina Principal</a></li>
+					<li><a class="navbar-brand" href="#">Sobre Nosotros</a></li>
+					<li><a class="navbar-brand" href="#">Convi&eacute;rtete en chofer</a></li>
+					<li><a class="navbar-brand" href="#">Ingresar</a></li>
+					<li>
+						<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-cog"></span></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="page_title">Registro</div>
+		<hr>
+		<div class="content">
+			<div class="spacer"></div>
+			<form method="post">
+				<div class="form-group">
+					<label for="name">Nombre&colon;</label>
+					<input id="name" type="text" name="name" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="lnamep">Apellido paterno&colon;</label>
+					<input id="lnamep" type="text" name="lnamep" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="lnamem">Apellido materno&colon;</label>
+					<input id="lnamem" type="text" name="lnamem" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="dob">Fecha de nacimiento&colon;</label>
+					<input type="number" name="day" min="1" max="31">
+					<select>
+						<option value="january">Enero</option>
+						<option value="february">Febrero</option>
+						<option value="march">Marzo</option>
+						<option value="april">Abril</option>
+						<option value="may">Mayo</option>
+						<option value="june">Junio</option>
+						<option value="july">Julio</option>
+						<option value="august">Agosto</option>
+						<option value="september">Septiembre</option>
+						<option value="october">Octubre</option>
+						<option value="novemeber">Noviembre</option>
+						<option value="december">Diciembre</option>
+					</select>
+					<input type="number" name="year" max="2019">
+				</div>
+				<!--
+				<div class="input-group date" data-provide="datepicker">
+					<input type="text" class="form-control">
+					<div class="input-group-addon">
+						<span class="glyphicon glyphicon-th"></span>
+					</div>
+				</div>
+				-->
+				<div class="form-group">
+					<label for="mail">Correo&colon;</label>
+					<input id="mail" type="text" name="mail" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="addr">Direcci&oacute;n&colon;</label>
+					<input id="addr" type="text" name="addr" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<label for="phone">Tel&eacute;fono&colon;</label>
+					<input id="phone" type="number" name="phone" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="phone2">Tel&eacute;fono secundario &lpar;opcional&rpar;</label>
+					<input id="phone2" type="number" name="phone2" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="pwd">Contrase&ntilde;a&colon;</label>
+					<input id="pwd" type="password" name="pwd" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="conf">Confirmar contrase&ntilde;a&colon;</label>
+					<input id="conf" type="password" name="conf" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="id">Prueba de identidad&colon;</label>
+					<input id="id" type="file" name="id" class="form-control">
+				</div>
+				<input type="submit" name="send" value="Aceptar">
+			</form>
+			<div class="spacer"></div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>

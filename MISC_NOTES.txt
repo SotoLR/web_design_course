@@ -1,0 +1,70 @@
+MISC NOTES
+padding: 0 auto;
+text-align: center; <- better
+text-decoration <- the bullet point
+https://www.w3schools.com/cssref/pr_class_display.asp
+https://www.w3schools.com/tags/tag_nav.asp
+https://www.w3schools.com/tags/tag_aside.asp
+
+https://javier.rodriguez.org.mx/projects/itesm-artwork
+
+================================================
+
+CDNs
+
+container-fluid
+container
+
+=========================================
+
+Screen sizes
+	extra-small < 576px
+	small >= 576px
+	medium >= 768px
+	large >= 992px
+	x-large >= 1200px
+(Bootstrap takes care of these)
+
+========================================
+npm init -y
+npm install webpack --save-dev
+npm install bootstrap --save
+nmp install jquery --save
+npm install autoprefixer css-loader node-sass postcss-loader sass-loader style-loader --save-dev
+
+npm install exports-lader
+
+npm install webpack-cli -g
+
+npm run build
+
+====================================
+ANGULAR theory
+
+JSP -> servlet java
+
+MVC - modelo, vista, contenedor
+
+Patron de design
+presentacion
+usuario
+
+MVVM
+
+
+ANGULAR practice
+
+npm install -g @angular/cli
+ng --version
+
+ng new proyecto-angular --style=scss
+	no routing for now
+
+ng serve
+	starts server
+
+karma.conf.js helps run unit test
+e2e/protractor.conf.js helps run integration tests
+npm install --save bootstrap
+	add bootstrap to project
+modify styles.scss to add import @import "bootstrap"
