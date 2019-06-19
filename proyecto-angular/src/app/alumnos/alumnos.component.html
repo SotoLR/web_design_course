@@ -1,0 +1,4 @@
+<h1>Alumnos</h1>
+<div *ngFor="let al of alumnos"> <!-- *ngFor is a directive used by angular. al is now an iterator (the array from alumnos) -->
+	<alumno [data]="al"></alumno> <!-- NOT alumnoS -->
+</div>

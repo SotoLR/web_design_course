@@ -68,3 +68,38 @@ e2e/protractor.conf.js helps run integration tests
 npm install --save bootstrap
 	add bootstrap to project
 modify styles.scss to add import @import "bootstrap"
+
+CREATE COMPONENT
+ng generate component Mycomponent
+	OR
+ng g c componentname
+
+in src<app.module.ts added
+	import {ComponentTitle} from 
+
+remember to remove
+	@import "bootstrap"
+from /web_design_course/proyecto-angular/src/styles.scs
+
+summary:
+	created component
+	got name from component typescript, in selector
+	added to app component html as a tag
+	started server
+	previously added "node_modules/bootstrap/scss/bootstrap.scss" to angular.json so it takes bootstrap
+
+bindings are the relation between html and ts
+types
+	{{}} two way
+	() html -> methods (ts)
+	[] Prop (ts) -> html
+
+
+MAKE SERVICE
+	ng generate service alumnos
+		created alumnos.service.spec.ts (ignore it) and alumnos.service.ts
+		prof likes to use ng generate service services/alumnos so its organized
+		to delete, just do it by hand
+		must add following line to component
+			import {AlumnosService} from '../svcs/alumnos.service'
+		must also add provider (examples for all this in app.component.html)
